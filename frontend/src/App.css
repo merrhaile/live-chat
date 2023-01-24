@@ -1,0 +1,161 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:40rem;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted grey;
+  padding: 2rem;
+}
+h3 {
+  align-self: center;
+}
+.input {
+  height: 2rem;
+  width: 15rem;
+  margin: .3rem;
+  border: 1px solid rgb(82, 199, 245);
+  border-radius: 7px;
+}
+
+.btn {
+  background-color: rgb(82, 199, 245);
+  border : 1px solid rgb(82, 199, 245);
+  border-radius: 5px;
+  width: 15.5rem;
+  height: 2rem;
+  margin: .3rem;
+}
+
+.chat-header{
+  background-color: rgb(16, 113, 151);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 20rem;
+  height: 2.2rem;
+  padding-left: 0.5rem;
+  margin-top: 6rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chat-body {
+  border: 1px solid grey;
+  height: 25rem;
+  width: 20.2rem;
+
+}
+.chat-input{
+  border: 1px solid grey;
+  height: 1.8rem;
+  width: 18.5rem;
+}
+.chat-btn {
+  background-color: rgb(243, 246, 248);
+  color: rgb(207, 205, 205);
+  height: 2.1rem;
+}
+.message{
+  display:flex;
+}
+#you {
+  justify-content: flex-start;
+}
+#you .message-content{
+  justify-content: flex-start;
+  background-color: rgb(84, 191, 84);
+  color:white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+  overflow-wrap: break-word;
+  width: 12rem;
+  min-height: 2rem;
+}
+
+#you .message-meta {
+  font-size: 10px;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+#other{
+  justify-content: flex-end;
+}
+#other .message-content {
+  justify-content: flex-end;
+  background-color: rgb(87, 156, 248);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+  overflow-wrap: break-word;
+  width: 12rem;
+  min-height: 2rem;
+}
+
+#other .message-meta {
+  font-size: 10px;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.message-container {
+  width: 100%;
+  height:100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
